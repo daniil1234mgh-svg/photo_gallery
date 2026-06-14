@@ -10,6 +10,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.5s;
 }
 
 body {
@@ -43,4 +44,18 @@ p {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    background: linear-gradient(to top, black, transparent);
+    color: white;
+    font-size: 23px;
+    transform: translateY(100%);
+    transition: all 0.5s;
+}
+
+.block:hover p {
+    transform: translateY(0%);
+
+}
+.block:hover img {
+    transform:scale(1.2);
+    filter:brightness(80%);
 }
